@@ -1,0 +1,9 @@
+h1 {
+  color: white;
+}
+
+#lista {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
