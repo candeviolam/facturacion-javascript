@@ -1,7 +1,7 @@
 // Carga Inicial de Datos - Semilla
 const productos_base = [
   {
-    id: 1,
+    id: 1, // reconocer el elemento de la lista sin equivocarnos
     descripcion:
       "Consigue lo que te propongas. Lleva a cabo tus tareas de la oficina con eficiencia. Mantiene tus negocios productivos y tus datos, seguros. Diseño más delgado y pequeño con marcos laterales más estrechos. Pantalla de 15.6 pulgadas para que no te pierdas de ningún detalle.",
     precio_unitario: 144999,
