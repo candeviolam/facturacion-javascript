@@ -61,7 +61,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesión</h1>
             <button
               type="button"
               class="btn-close"
@@ -69,7 +69,34 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body">...</div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="mail" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="mail"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  No compartiremos tus datos con nadie.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                />
+              </div>
+            </form>
+          </div>
           <div class="modal-footer">
             <button
               type="button"
@@ -78,7 +105,7 @@
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-dark" id="save">Save changes</button>
           </div>
         </div>
       </div>
@@ -91,5 +118,7 @@
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"
   ></script>
+  <!--pongo primero el script de iniciar sesión, porque se ejecutan en orden, así si el usuario ya está registrado, no va a aparecer el botón diciendo "iniciar sesión, sino directamente como que ya esté ingresado"-->
+  <script src="./js/iniciar_sesion.js"></script>
   <script src="./js/index.js"></script>
 </html>
