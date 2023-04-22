@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/iniciar_sesion.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -37,13 +38,20 @@
             <li class="nav-item">
               <a class="nav-link" href="./pages/productos.html">Productos</a>
             </li>
+            <li class="nav-item" id="administrar">
+              <a class="nav-link" href="./pages/administrar.html">Administrar</a>
+            </li>
             <li class="nav-item">
               <button
                 class="btn btn-dark"
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal"
+                id="login-page"
               >
                 Iniciar Sesión
+              </button>
+              <button class="btn btn-secondary" id="logout">
+                Cerrar Sesión
               </button>
             </li>
           </ul>
@@ -61,7 +69,9 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesión</h1>
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Iniciar Sesión
+            </h1>
             <button
               type="button"
               class="btn-close"
@@ -72,9 +82,7 @@
           <div class="modal-body">
             <form>
               <div class="mb-3">
-                <label for="mail" class="form-label"
-                  >Email address</label
-                >
+                <label for="mail" class="form-label">Email address</label>
                 <input
                   type="email"
                   class="form-control"
@@ -86,14 +94,8 @@
                 </div>
               </div>
               <div class="mb-3">
-                <label for="password" class="form-label"
-                  >Password</label
-                >
-                <input
-                  type="password"
-                  class="form-control"
-                  id="password"
-                />
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" />
               </div>
             </form>
           </div>
@@ -102,10 +104,11 @@
               type="button"
               class="btn btn-secondary"
               data-bs-dismiss="modal"
+              id="close"
             >
               Close
             </button>
-            <button type="button" class="btn btn-dark" id="save">Save changes</button>
+            <button type="button" class="btn btn-dark" id="login">Login</button>
           </div>
         </div>
       </div>
