@@ -14,7 +14,8 @@ if (productos) {
     htmlString += CreateCards(
       producto.foto_url,
       producto.nombre,
-      Url(producto.id)
+      Url(producto.id),
+      producto.precio_unitario_str
     );
   });
   div_productos.innerHTML = htmlString;

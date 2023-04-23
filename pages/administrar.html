@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
     <link rel="stylesheet" type="text/css" href="../css/iniciar_sesion.css" />
+    <link rel="stylesheet" type="text/css" href="../css/administrar.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -60,6 +61,71 @@
         </div>
       </div>
     </nav>
+
+    <div class="container">
+      <div class="formulario">
+        <form>
+          <div class="mb-3">
+            <label for="nombre_administrar" class="form-label">Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nombre_administrar"
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="foto_administrar" class="form-label">Url foto</label>
+            <input
+              type="text"
+              class="form-control"
+              id="foto_administrar"
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="descripcion_administrar" class="form-label"
+              >Descripción</label
+            >
+            <textarea
+              class="form-control"
+              id="descripcion_administrar"
+              aria-describedby="emailHelp"
+            ></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="precio_administrar" class="form-label"
+              >Precio Unitario</label
+            >
+            <input type="number" class="form-control" id="precio_administrar" />
+          </div>
+          <div class="mb-3">
+            <label for="stock_administrar" class="form-label">Stock</label>
+            <input type="number" class="form-control" id="stock_administrar" />
+          </div>
+          <div class="mb-3 form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="stocknegativo_administrar"
+            />
+            <label
+              class="form-check-label"
+              for="stocknegativo_administrar"
+              >Permite Stock Negativo</label
+            >
+          </div>
+          <button id="save_administrar" class="btn btn-primary">Guardar</button>
+        </form>
+      </div>
+    </div>
+
+    <!--Tabla-->
+    <div class="tabla-parent">
+      <div id="tabla"></div>
+    </div>
+    <!--Fin de tabla-->
+
     <!-- Modal -->
     <div
       class="modal fade"

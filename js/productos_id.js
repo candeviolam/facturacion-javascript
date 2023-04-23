@@ -27,5 +27,6 @@ function CreateProduct() {
     <h3>${elementoFiltrado.nombre}</h3>
     <img src="${elementoFiltrado.foto_url}"/>
     <p>${elementoFiltrado.descripcion}</p>
+    <p>${elementoFiltrado.precio_unitario_str}</p>
     </div>`;
 }
